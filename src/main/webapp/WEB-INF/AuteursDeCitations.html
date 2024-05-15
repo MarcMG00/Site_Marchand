@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ajax</title>
+
+	<link rel="stylesheet" href="css/Ajax.css" type="text/css" />
+</head>
+
+<body>
+	<div><img src="image/Ajax.jpg" width="200" alt="Ajax" /></div>
+
+	<div>
+		<b>La zone ci-dessous va afficher le XML brut re&ccedil;u par le moteur Ajax.</b><br/>
+		<textarea id ="tt_zone" rows="4" cols="40">Valeur par d&eacute;faut</textarea><br/>
+		<input id="bt_zone" type="button" value="Afficher le XML" /><br/>
+
+		<br/>
+		<b>La liste d&eacute;roulante ci-dessous va contenir la liste des noms des auteurs.</b><br/>
+		<select id="lnom"><option>-----</option></select>
+		<input id="bt_auteurs" type="button" value="Afficher les auteurs" />
+		<div id="lcitations"></div>
+
+		<br/>
+		<div><b>Google.</b><br/>
+		<input id="saisie" class="saisie" type="text" placeholder="Saisissez des caract&egrave;res !" />
+		<div id="zoneaff" class="boite"></div>
+		</div>
+
+		<br/>
+		<b>Formulaire de saisie.</b>
+		<div id="formAdd">
+			<div><input type="text" name="zone" size="20" maxlength="20" /><span></span></div>
+			<div><input type="button" value="+" id="plus" disabled/></div>
+		</div>
+
+		<hr/>
+		<b>Encodage de caract&egrave;res.</b><br/>
+		<input id="envoie" type="text" size="20" value="Entrez..." /> Caract&egrave;res envoy&eacute;s au serveur<br/>
+		<input id="recue" type="text" size="20" value="-" /> Caract&egrave;res re&ccedil;us du serveur<br/>
+		<input id="bt_Url" type="button" value="Envoyer" /><br/>
+
+		<br/>
+		<b>Lancement direct d'une servlet. </b><a href="ServletCitation?nomauteur=Guitry">Go !</a><br/>
+		
+		<b>Nombre de mots : </b><span>0</span><br/>
+	</div>
+
+	<script type="text/JavaScript" src="js/fctxml.js"></script>
+</body>
+</html>
